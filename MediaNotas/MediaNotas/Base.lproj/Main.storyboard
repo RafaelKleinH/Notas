@@ -99,19 +99,25 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfl-ue-rNm">
-                                <rect key="frame" x="0.0" y="515" width="428" height="377"/>
+                                <rect key="frame" x="0.0" y="515" width="428" height="417"/>
                                 <subviews>
-                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5Q-yF-AZ9">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f5Q-yF-AZ9">
                                         <rect key="frame" x="16" y="8" width="396" height="132"/>
                                         <color key="backgroundColor" white="1" alpha="0.36646511130136988" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="132" id="Bum-pK-aCd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="0">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="button.titeLabel?.adjustsFonstSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n4f-j3-jfo">
-                                        <rect key="frame" x="16" y="148" width="396" height="213"/>
+                                        <rect key="frame" x="16" y="148" width="396" height="253"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -134,7 +140,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sN8-7s-nUy" secondAttribute="trailing" constant="26" id="5Af-Z8-TdZ"/>
                             <constraint firstItem="Hhp-19-Fb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="BqJ-HI-EfW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nfl-ue-rNm" secondAttribute="trailing" id="CgG-8c-20d"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nfl-ue-rNm" secondAttribute="bottom" id="Dsj-1b-F4a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nfl-ue-rNm" secondAttribute="bottom" constant="-40" id="Dsj-1b-F4a"/>
                             <constraint firstItem="u8C-sN-o7D" firstAttribute="top" secondItem="Cab-gW-kep" secondAttribute="bottom" constant="32" id="HFi-py-H83"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cab-gW-kep" secondAttribute="trailing" id="I4D-en-MR4"/>
                             <constraint firstItem="XOa-Zc-PdD" firstAttribute="top" secondItem="Hhp-19-Fb5" secondAttribute="bottom" constant="32" id="P10-1C-5If"/>
