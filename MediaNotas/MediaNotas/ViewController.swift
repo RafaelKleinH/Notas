@@ -8,34 +8,27 @@
 import UIKit
 
 /*extension UIButton{
-    
-    func  allowTextToScale(minFontScale : CGFloat = 0.5, numberOfLines : Int = 4){
-        
-        self.titleLabel?.adjustsFontSizeToFitWidth = true
-        self.titleLabel?.minimumScaleFactor = minFontScale
-        self.titleLabel?.lineBreakMode = .byTruncatingTail
-        self.titleLabel?.numberOfLines = numberOfLines
-        
-    }
-    
-}*/
+ 
+ func  allowTextToScale(minFontScale : CGFloat = 0.5, numberOfLines : Int = 4){
+ 
+ self.titleLabel?.adjustsFontSizeToFitWidth = true
+ self.titleLabel?.minimumScaleFactor = minFontScale
+ self.titleLabel?.lineBreakMode = .byTruncatingTail
+ self.titleLabel?.numberOfLines = numberOfLines
+ 
+ }
+ 
+ }*/
 
 class ViewController: UIViewController {
-
-    
     
     @IBOutlet weak var notaA: UITextField!
     @IBOutlet weak var notaB: UITextField!
     @IBOutlet weak var notaC: UITextField!
-    
-    
     @IBOutlet weak var btResulyt: UIButton!
-    
-    
     @IBOutlet weak var imgResult: UIImageView!
     
     var notaFinal: Float = 0
-    
     
     @IBAction func calculaNotas(_ sender: Any) {
         
@@ -44,20 +37,20 @@ class ViewController: UIViewController {
             
             if(notaA >= 0 && notaA <= 10 && notaB >= 0 && notaB <= 10 && notaC >= 0 && notaC <= 10) {
                 
-            notaFinal = (notaA + notaB + notaC) / 3
-            
-            mostraResultado()
+                notaFinal = (notaA + notaB + notaC) / 3
+                
+                mostraResultado()
             }
+            
             else {
                 
-               var texto = "Nota tem que ser entre 0 e 10."
-               var image = "caution"
+                let texto = "Nota tem que ser entre 0 e 10."
+                let image = "caution"
                 btResulyt.setTitle("\(texto)", for: .normal)
                 imgResult.image = UIImage(named: image);
                 
             }
         }
-        
     }
     
     func mostraResultado(){
@@ -69,26 +62,25 @@ class ViewController: UIViewController {
             texto = "Reprovado"
             image = "reeprovado"
             
-        case 5.1...7:
+        case 5.01...7:
             texto = "Recuperação"
             image = "caution"
+            
         default:
             texto = "Aprovado"
             image = "aaprovado"
+            
         }
         
         btResulyt.setTitle("\(notaFinal) \nSituação atual: \(texto)", for: .normal)
         imgResult.image = UIImage(named: image);
+        
     }
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
-
+    
 }
 
