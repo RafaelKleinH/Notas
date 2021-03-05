@@ -8,46 +8,54 @@
 import UIKit
 
 class ResultViewController: UIViewController{
-
- 
-
+    
+    
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var lbYear: UILabel!
     @IBOutlet weak var lbGrade: UILabel!
     @IBOutlet weak var lbSituation: UILabel!
-
-    var notasClass : NotasViewController!
-    var viewClass : ViewController!
-    var studA: Student!
     
-    func funcName(){
-        if let nome = viewClass.nameStudant, let ano = viewClass.yearStudant, let notaFinal = notasClass.finalResult{
-            
-            
-            studA = Student(nameOfStudent: viewClass.nameStudant, schoolsYear: viewClass.yearStudant)
-            lbName.text = "Nome do Aluno: \(nome)"
-            lbYear.text = "Serie atual: \(ano)"
-            lbGrade.text = "Nota Final: \(notaFinal)"
-            lbSituation.text = "Situação atual: "
-        }
-    }
-    
+    var texto: String = "Sendo analizado"
+    var student = Student(nameOfStudent: "", schoolsYear: 0, gradeArray: [])
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            
-        funcName()
-            
-        }
-     
-     
+        situationStudent()
+        
+        lbName.text = "Nome do Aluno: \(student.nameStudent)"
+        lbYear.text = "Serie atual: \(student.schoolYear)"
+        lbGrade.text = "Nota Final: \(String(format: "%.2f",student.gradeStudent[3]))"
+        
+        lbSituation.text = "Situação atual: \(texto)"
     }
-  
-   
-   
     
+    
+    func situationStudent(){
+        
+        switch student.gradeStudent[3] {
+            case 0..<5:
+                texto = "Reprovado."
+                
+            case 5.001...7:
+                texto = "Em exame."
+            
+            default:
+                texto = "Aprovado."
+                
+        }
+}
+    
+    
+}
 
-    
-    
+
+
+
+
+
+
+
+
+
 

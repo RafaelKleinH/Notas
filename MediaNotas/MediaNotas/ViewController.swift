@@ -21,50 +21,47 @@ import UIKit
  }*/
 
 class ViewController: UIViewController {
-  
+    
     @IBOutlet weak var tfName: UITextField!
     @IBOutlet weak var tfYear: UITextField!
-   
-    var nameStudant = "2"
-    var yearStudant = 6
-
     
-    
+    var studant = Student(nameOfStudent: "", schoolsYear: 0, gradeArray: [])
     
     @IBAction func btClick(_ sender: Any) {
-        nameCreate()
-        yearCreate()
-    }
-    
-    
-    func nameCreate() -> String{
-    
-        if let studentName = tfName.text{
-      
-            nameStudant = studentName
-       
-              }
-        return nameStudant
-    }
-    func yearCreate() -> Int {
-        if let studentYear = Int(tfYear.text!){
+        passInfo()
+        performSegue(withIdentifier: "secondViewController", sender: self)
         
-        yearStudant = studentYear
+        
     }
-    return yearStudant
+    
+    func passInfo(){
+        if let name = tfName.text, let year = Int(tfYear.text!){
+            
+            studant.nameStudent = name
+            studant.schoolYear = year
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let vc = segue.destination as! NotasViewController
+        
+        vc.student = studant
+        
+        
     }
 }
-            
-     
-            
-            
-        
-        
-        
-        
-        
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
 
 

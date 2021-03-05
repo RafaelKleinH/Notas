@@ -25,12 +25,12 @@
                                 </state>
                                 <connections>
                                     <action selector="btClick:" destination="yjH-fR-1s6" eventType="touchUpInside" id="Ui9-dW-YdM"/>
-                                    <segue destination="kg0-gC-qXP" kind="show" animates="NO" id="GQi-j8-caL"/>
+                                    <segue destination="kg0-gC-qXP" kind="show" identifier="secondViewController" animates="NO" id="GQi-j8-caL"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-ed-ryb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-ed-ryb">
                                 <rect key="frame" x="18" y="306" width="378" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPn-Kh-G5L">
@@ -47,7 +47,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiz-oW-Rwe">
                                 <rect key="frame" x="18" y="167" width="378" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -142,7 +142,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btClicks:" destination="kg0-gC-qXP" eventType="touchUpInside" id="gaG-uH-VXj"/>
-                                    <segue destination="mm2-Wx-ADc" kind="presentation" id="WMv-cV-8pr"/>
+                                    <segue destination="mm2-Wx-ADc" kind="presentation" identifier="ResultViewSegue" id="WMv-cV-8pr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-Fz-w2J">
@@ -200,26 +200,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total da nota: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKR-fB-BnP">
-                                <rect key="frame" x="46" y="214" width="352" height="39"/>
+                                <rect key="frame" x="46" y="213.33333333333334" width="352" height="39"/>
                                 <color key="tintColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                 <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situação:" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-0n-Nbu">
+                                <rect key="frame" x="46" y="284.33333333333331" width="352" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Aluno:" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-rU-6Qq">
+                                <rect key="frame" x="46" y="72" width="352" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano do Aluno:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgy-on-1HZ">
-                                <rect key="frame" x="46" y="143" width="352" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
-                                <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situação:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-0n-Nbu">
-                                <rect key="frame" x="46" y="285" width="352" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
-                                <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Aluno:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-rU-6Qq">
-                                <rect key="frame" x="46" y="72" width="352" height="39"/>
+                                <rect key="frame" x="46" y="142.33333333333334" width="352" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                 <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -229,17 +229,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="feJ-rU-6Qq" secondAttribute="trailing" constant="16" id="1ph-76-FW1"/>
-                            <constraint firstItem="feJ-rU-6Qq" firstAttribute="top" secondItem="hzS-Z8-Dys" secondAttribute="top" constant="72" id="AIh-xU-b4T"/>
-                            <constraint firstItem="xKR-fB-BnP" firstAttribute="top" secondItem="Fgy-on-1HZ" secondAttribute="bottom" constant="32" id="BIv-yc-ico"/>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="xKR-fB-BnP" secondAttribute="trailing" constant="16" id="Bbx-AJ-rwF"/>
-                            <constraint firstItem="GYU-0n-Nbu" firstAttribute="top" secondItem="xKR-fB-BnP" secondAttribute="bottom" constant="32" id="ElO-ym-JCt"/>
+                            <constraint firstItem="xKR-fB-BnP" firstAttribute="top" secondItem="Fgy-on-1HZ" secondAttribute="bottom" constant="32" id="Bzd-X5-d6R"/>
+                            <constraint firstItem="GYU-0n-Nbu" firstAttribute="top" secondItem="xKR-fB-BnP" secondAttribute="bottom" constant="32" id="L1j-WW-6nY"/>
                             <constraint firstItem="xKR-fB-BnP" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="NwX-rA-2df"/>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="GYU-0n-Nbu" secondAttribute="trailing" constant="16" id="REp-DU-Men"/>
                             <constraint firstItem="Fgy-on-1HZ" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="a7r-Ca-zKQ"/>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="Fgy-on-1HZ" secondAttribute="trailing" constant="16" id="l0D-nG-6Re"/>
+                            <constraint firstItem="Fgy-on-1HZ" firstAttribute="top" secondItem="feJ-rU-6Qq" secondAttribute="bottom" constant="32" id="l8N-SR-u8o"/>
                             <constraint firstItem="GYU-0n-Nbu" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="liX-sp-tlm"/>
-                            <constraint firstItem="Fgy-on-1HZ" firstAttribute="top" secondItem="feJ-rU-6Qq" secondAttribute="bottom" constant="32" id="qEf-Zm-Eeh"/>
                             <constraint firstItem="feJ-rU-6Qq" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="rhe-y6-uwX"/>
+                            <constraint firstItem="feJ-rU-6Qq" firstAttribute="top" secondItem="hzS-Z8-Dys" secondAttribute="top" constant="72" id="ylw-Es-x9M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cqC-Nf-sKd"/>
@@ -252,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQ5-I7-9p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="-484.40779610194909"/>
+            <point key="canvasLocation" x="211.59420289855075" y="-485.054347826087"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ijf-HF-gpQ">
