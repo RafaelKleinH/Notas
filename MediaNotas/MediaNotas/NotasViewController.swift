@@ -21,12 +21,14 @@ class NotasViewController: UIViewController {
     @IBOutlet weak var gradeA: UITextField!
     @IBOutlet weak var gradeB: UITextField!
     @IBOutlet weak var gradeC: UITextField!
-    
-    
+    var firstGrade: Float = 0
+    var secondGrade: Float = 0
+    var lastGrade: Float = 0
+    var finalResult: Float = 0
 
 
     
-        func gradeCalc() -> Float{
+        func gradeCalc(){
         
         var notaFinal:Float = 0
         if let gradesA = Float(gradeA.text!), let gradesB = Float(gradeB.text!), let gradesC = Float(gradeC.text!){
@@ -37,14 +39,24 @@ class NotasViewController: UIViewController {
     
                notaFinal = gradesA + gradesB + gradesC / 3
                 
+                firstGrade = gradesA
+                
+                secondGrade = gradesB
+                
+                lastGrade = gradesC
+                
+                finalResult = notaFinal
                
             }
          
     }
-            return notaFinal
+          
     }
     
     
     
+    @IBAction func btClicks(_ sender: Any) {
+        gradeCalc()
+    }
     
 }

@@ -24,6 +24,7 @@
                                     <color key="titleColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="btClick:" destination="yjH-fR-1s6" eventType="touchUpInside" id="Ui9-dW-YdM"/>
                                     <segue destination="kg0-gC-qXP" kind="show" animates="NO" id="GQi-j8-caL"/>
                                 </connections>
                             </button>
@@ -102,21 +103,21 @@
                                 <rect key="frame" x="18" y="149" width="378" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2 Trimestre de Julho até Setembro" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nzS-ZP-aPG">
                                 <rect key="frame" x="18" y="267" width="378" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="3 Trimestre de Outubro até Dezembro" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0v-0m-bsH">
                                 <rect key="frame" x="18" y="385" width="378" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -140,6 +141,7 @@
                                     <color key="titleColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="btClicks:" destination="kg0-gC-qXP" eventType="touchUpInside" id="gaG-uH-VXj"/>
                                     <segue destination="mm2-Wx-ADc" kind="presentation" id="WMv-cV-8pr"/>
                                 </connections>
                             </button>
@@ -255,7 +257,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Ijf-HF-gpQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-yh-DWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cbs-C8-faR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -276,6 +277,7 @@
                         <segue destination="yjH-fR-1s6" kind="relationship" relationship="rootViewController" id="yxR-xu-pfz"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-yh-DWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2594.4000000000001" y="-483.50824587706148"/>
         </scene>

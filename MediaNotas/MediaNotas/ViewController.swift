@@ -28,6 +28,15 @@ class ViewController: UIViewController {
     var nameStudant = "2"
     var yearStudant = 6
 
+    
+    
+    
+    @IBAction func btClick(_ sender: Any) {
+        nameCreate()
+        yearCreate()
+    }
+    
+    
     func nameCreate() -> String{
     
         if let studentName = tfName.text{
