@@ -31,13 +31,17 @@ class ResultViewController: UIViewController{
     }
     
     
+    @IBOutlet weak var lbZero: UILabel!
     func situationStudent(){
         
         switch student.gradeStudent[3] {
-            case 0..<5:
+        case 0:
+               texto = "Reprovado."
+            lbZero.isHidden = false
+        case 0.1..<5:
                 texto = "Reprovado."
                 
-            case 5.001...7:
+        case 5.001...7:
                 texto = "Em exame."
             
             default:

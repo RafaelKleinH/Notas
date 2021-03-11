@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func btClick(_ sender: Any) {
         passInfo()
-        performSegue(withIdentifier: "secondViewController", sender: self)
+        performSegue(withIdentifier: "firstSegue", sender: self)
         
         
     }

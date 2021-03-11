@@ -8,19 +8,12 @@
 import UIKit
 
 class NotasViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
-        
     }
-    
-    
-    
-    
-    
-    
     
     @IBOutlet weak var gradeA: UITextField!
     @IBOutlet weak var gradeB: UITextField!
@@ -59,15 +52,28 @@ class NotasViewController: UIViewController {
                 
             }
             
+        
+        else {
+            
+            student.gradeStudent.removeAll()
+            student.gradeStudent.append(0)
+            student.gradeStudent.append(0)
+            student.gradeStudent.append(0)
+            student.gradeStudent.append(0)
+            
+            }
         }
         
     }
     
     
+    @IBAction func btOut(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func btClicks(_ sender: Any) {
         gradeCalc()
-        performSegue(withIdentifier: "ResultViewSegue", sender: self)
+        performSegue(withIdentifier: "secondSegue", sender: self)
     }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cbs-C8-faR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjH-fR-1s6">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="yjH-fR-1s6" customClass="ViewController" customModule="MediaNotas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bl3-OO-JaG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGv-wm-KSQ">
-                                <rect key="frame" x="18" y="591" width="378" height="47"/>
+                                <rect key="frame" x="18" y="635" width="378" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <state key="normal" title="Enviar">
@@ -25,7 +25,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btClick:" destination="yjH-fR-1s6" eventType="touchUpInside" id="Ui9-dW-YdM"/>
-                                    <segue destination="kg0-gC-qXP" kind="show" identifier="secondViewController" animates="NO" id="GQi-j8-caL"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-ed-ryb">
@@ -85,6 +84,7 @@
                     <connections>
                         <outlet property="tfName" destination="kiz-oW-Rwe" id="E8U-XJ-vQA"/>
                         <outlet property="tfYear" destination="tRF-ed-ryb" id="C4q-jk-z5i"/>
+                        <segue destination="kg0-gC-qXP" kind="show" identifier="firstSegue" id="fVH-tT-O9D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbq-QZ-eN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,7 +96,7 @@
             <objects>
                 <viewController id="kg0-gC-qXP" customClass="NotasViewController" customModule="MediaNotas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFit" id="dEf-JZ-D4O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 Trimestre de Abril até Junho" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVZ-DC-GE5">
@@ -134,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sym-jk-Hgn">
-                                <rect key="frame" x="20" y="591" width="378" height="47"/>
+                                <rect key="frame" x="20" y="615" width="378" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <state key="normal" title="Enviar">
@@ -142,7 +142,6 @@
                                 </state>
                                 <connections>
                                     <action selector="btClicks:" destination="kg0-gC-qXP" eventType="touchUpInside" id="gaG-uH-VXj"/>
-                                    <segue destination="mm2-Wx-ADc" kind="presentation" identifier="ResultViewSegue" id="WMv-cV-8pr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nota 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-Fz-w2J">
@@ -151,6 +150,16 @@
                                 <color key="textColor" red="1" green="1" blue="0.85656571059999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hG-0U-5la">
+                                <rect key="frame" x="17" y="18" width="49" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="〈〈">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btOut:" destination="kg0-gC-qXP" eventType="touchUpInside" id="alV-On-k3a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q7Q-8k-GWX"/>
                         <color key="backgroundColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,8 +183,10 @@
                             <constraint firstItem="Q7Q-8k-GWX" firstAttribute="trailing" secondItem="e0v-0m-bsH" secondAttribute="trailing" constant="18" id="eIa-YA-vqG"/>
                             <constraint firstItem="e0v-0m-bsH" firstAttribute="top" secondItem="S2o-HZ-GpH" secondAttribute="bottom" constant="18" id="eq5-vU-0nc"/>
                             <constraint firstItem="Sym-jk-Hgn" firstAttribute="leading" secondItem="Q7Q-8k-GWX" secondAttribute="leading" constant="20" id="i3M-tz-ITK"/>
+                            <constraint firstItem="7hG-0U-5la" firstAttribute="top" secondItem="Q7Q-8k-GWX" secondAttribute="top" constant="18" id="mJu-uo-huH"/>
                             <constraint firstItem="3s1-Fz-w2J" firstAttribute="top" secondItem="Q7Q-8k-GWX" secondAttribute="top" constant="92" id="ogw-v0-mlD"/>
                             <constraint firstItem="3s1-Fz-w2J" firstAttribute="leading" secondItem="Q7Q-8k-GWX" secondAttribute="leading" constant="16" id="u8W-KI-zo1"/>
+                            <constraint firstItem="7hG-0U-5la" firstAttribute="leading" secondItem="Q7Q-8k-GWX" secondAttribute="leading" constant="17" id="wKQ-wU-NGY"/>
                             <constraint firstItem="S2o-HZ-GpH" firstAttribute="leading" secondItem="Q7Q-8k-GWX" secondAttribute="leading" constant="16" id="x2x-mq-d6l"/>
                             <constraint firstItem="WVZ-DC-GE5" firstAttribute="leading" secondItem="Q7Q-8k-GWX" secondAttribute="leading" constant="18" id="yhS-rx-mVs"/>
                         </constraints>
@@ -185,6 +196,7 @@
                         <outlet property="gradeA" destination="WVZ-DC-GE5" id="RaA-lV-Ivu"/>
                         <outlet property="gradeB" destination="nzS-ZP-aPG" id="0mU-Gi-FpT"/>
                         <outlet property="gradeC" destination="e0v-0m-bsH" id="JJH-af-kPB"/>
+                        <segue destination="mm2-Wx-ADc" kind="show" identifier="secondSegue" id="BTz-4W-6Qw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXD-rz-oI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -206,7 +218,7 @@
                                 <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situação:" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-0n-Nbu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Situação:" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-0n-Nbu">
                                 <rect key="frame" x="46" y="284.33333333333331" width="352" height="38.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                 <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -224,14 +236,23 @@
                                 <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reavalie as notas, são entre 0 e 10 e tem que ser 3 notas para o nosso sistema." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-GX-8uP">
+                                <rect key="frame" x="46" y="354.66666666666669" width="352" height="153"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" red="0.57090848679999995" green="0.093776650729999994" blue="0.1218890026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hzS-Z8-Dys"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="feJ-rU-6Qq" secondAttribute="trailing" constant="16" id="1ph-76-FW1"/>
+                            <constraint firstItem="zlx-GX-8uP" firstAttribute="top" secondItem="GYU-0n-Nbu" secondAttribute="bottom" constant="32" id="5Qd-FW-aaY"/>
+                            <constraint firstItem="zlx-GX-8uP" firstAttribute="leading" secondItem="GYU-0n-Nbu" secondAttribute="leading" id="5xd-JH-CMa"/>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="xKR-fB-BnP" secondAttribute="trailing" constant="16" id="Bbx-AJ-rwF"/>
                             <constraint firstItem="xKR-fB-BnP" firstAttribute="top" secondItem="Fgy-on-1HZ" secondAttribute="bottom" constant="32" id="Bzd-X5-d6R"/>
                             <constraint firstItem="GYU-0n-Nbu" firstAttribute="top" secondItem="xKR-fB-BnP" secondAttribute="bottom" constant="32" id="L1j-WW-6nY"/>
+                            <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="zlx-GX-8uP" secondAttribute="trailing" constant="16" id="MG7-D2-U9C"/>
                             <constraint firstItem="xKR-fB-BnP" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="NwX-rA-2df"/>
                             <constraint firstItem="hzS-Z8-Dys" firstAttribute="trailing" secondItem="GYU-0n-Nbu" secondAttribute="trailing" constant="16" id="REp-DU-Men"/>
                             <constraint firstItem="Fgy-on-1HZ" firstAttribute="leading" secondItem="hzS-Z8-Dys" secondAttribute="leading" constant="46" id="a7r-Ca-zKQ"/>
@@ -248,38 +269,12 @@
                         <outlet property="lbName" destination="feJ-rU-6Qq" id="dst-0q-CW0"/>
                         <outlet property="lbSituation" destination="GYU-0n-Nbu" id="WEK-VE-c9M"/>
                         <outlet property="lbYear" destination="Fgy-on-1HZ" id="Vvj-uz-qs0"/>
+                        <outlet property="lbZero" destination="zlx-GX-8uP" id="1lq-Qj-t7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQ5-I7-9p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="211.59420289855075" y="-485.054347826087"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ijf-HF-gpQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cbs-C8-faR" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="S2i-RR-gQI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="0.57090848684310913" green="0.093776650726795197" blue="0.12188900262117386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="yjH-fR-1s6" kind="relationship" relationship="rootViewController" id="yxR-xu-pfz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YdC-yh-DWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2594.4000000000001" y="-483.50824587706148"/>
         </scene>
     </scenes>
     <resources>
