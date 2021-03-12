@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tvDescription: UITextView!
     var imageArray: [String] = []
 
+    @IBOutlet weak var ivAppear: UIImageView!
+    @IBOutlet weak var lbAppear: UILabel!
     
     
     override func viewDidLoad() {
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
         lbTeam.text = "Grupo: \(heroes.team)"
         tvDescription.text = heroes.description
         
-        
+    
         
         //let nameOfApperString = heroes
            // .replacingOccurrences(of: " ", with: "")
@@ -66,12 +68,17 @@ extension ViewController : UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let  heros = heroes.appearances[section].nameAppear
-        return heros.count
+        
+        return heroes.appearances.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cells = tableView.dequeueReusableCell(withIdentifier: "cells", for: indexPath)
         
+        let nameImage = UIImage(named: imageArray[indexPath.row])
+                
+        lbAppear.text = heroes.appearances[indexPath.row].nameAppear
+        
+        ivAppear.image = nameImage
         
         return cells
         
