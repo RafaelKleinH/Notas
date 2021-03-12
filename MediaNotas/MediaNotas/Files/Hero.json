@@ -1,0 +1,118 @@
+[{
+	"name": "Batman",
+	"realName":"Bruce Wayne",
+	"powers": "Riqueza, Treino",
+ 	"team": "Liga da Justiça.",
+    "description":"Bruce Wayne é um bilionário americano, magnata de negócios, filantropo e dono da corporação Wayne Enterprises. Sua história teve início após testemunhar o assassinato de seus pais ainda quando criança, o que o fez jurar vingança contra os criminosos e treinar todos os dias sozinho, além de criar um personagem baseado em um morcego para combater o crime. Foi aí que surgiu Batman, o super-herói da cidade de Gotham. Apesar de não ter superpoderes, Batman faz uso de seu intelecto, conhecimento em artes marciais, destreza física e habilidades de detetive. Mesmo tendo uma grande variedade de vilões como inimigos, incluindo o grande destaque, Coringa, Batman é ajudado por vários personagens incluindo o mordomo Alfred Pennyworth, o comissário de polícia Jim Gordon e outros aliados como Robin. Bruce Wayne mostra-se à sociedade como um playboy irresponsável e superficial rico, porém ele também é conhecido por contribuir para a caridade através da Fundação Wayne para ajudar vítimas de crimes e impedir a entrada no crime de jovens. Essa personalidade foi criada para que as pessoas não desconfiassem de seu alter ego. Enquanto Bruce Wayne é despreocupado e irresponsável, Batman é frio, determinado e implacável. Além do uniforme e da máscara, quando Batman, Wayne altera sua voz para ficar cada vez mais irreconhecível.",
+	"appearances": [{
+			"nameAppear":"Detetive Comics"
+			},
+			{
+			"nameAppear":"Piada Mortal"
+			},
+			{
+			"nameAppear":"O Cavaleiro das Trevas"
+			}]
+			
+},
+{
+	"name": "Flash",
+	"realName":"Barry Allen",
+	"powers": "Super Velocidade",
+ 	"team": "Liga da Justiça.",
+    "description":"Flash é um nome compartilhado por diversos super-heróis da DC Comics. Criado pelo escritor Gardner Fox e pelo artista Harry Lampert, o Flash original estreou em Flash Comics #1 (1940). Também chamado de velocista escarlate, o Flash possui super-velocidade, consegue mover-se a uma velocidade sobre-humana, usar reflexos sobre-humanos e violar certas Leis da física, podendo até mesmo ultrapassar a velocidade da luz. Até então, quatro diferentes personagens, cada qual de algum modo ganhou o poder da super-velocidade, assumiram a identidade de Flash: Jay Garrick (1940-1956), Barry Allen (1956-1986, 2008-), Wally West (1986-2006, 2007-) Bart Allen (2006-2007). A segunda versão do Flash é geralmente considerada o primeiro herói da Era de Prata dos Quadrinhos e o super-herói permaneceu um dos mais populares desde então. Cada versão do Flash foi um membro chave ou da Sociedade da Justiça da América ou da Liga da Justiça, principais grupos da DC. Uma versão de Barry Allen foi vista em um seriado de tv, estrelado por John Wesley Shipp. Uma versão de Wally West foi utilizada na série animada Liga da Justiça.",
+	"appearances": [{
+			"nameAppear":"Ponto de Ignição"
+			},
+			{
+			"nameAppear":"Renascimento"
+			},
+			{
+			"nameAppear":"Velocidade Terminal"
+			}]
+			
+},
+{
+	"name": "Mulher Maravilha",
+	"realName":"Diana Prince",
+	"powers": "Hibrida-Amazona-Semideusa",
+ 	"team": "Liga da Justiça.",
+    "description":"Mulher-Maravilha (em inglês, Wonder Woman) é uma personagem fictícia de histórias em quadrinhos publicadas pela editora estadunidense DC Comics, originalmente é uma super-heroína guerreira de origem greco-romana, alter ego da Princesa Diana de Themyscira, ilha oculta, também conhecida como Ilha Paraíso, local da civilização de amazonas (como as figuras da lenda grega-romana). Como emissária de Themyscira para o Mundo do Homem, assume o pseudônimo de Diana Prince, identidade secreta que ela adotou para se aproximar da humanidade no Universo DC. Entre os super-heróis, ela era a mulher independente, não menina. Membro honorário da Sociedade de Justiça da América, primeiro grupo de super-heróis a aparecer historicamente nas Histórias em Quadrinhos. Na Era Prata, fundadora da Liga da Justiça permanecendo até hoje.",
+	"appearances": [{
+			"nameAppear":"Deuses e mortais"
+			},
+			{
+			"nameAppear":"A Verdadeira Amazona"
+			},
+			{
+			"nameAppear":"Renascimento"
+			}]
+			
+},
+{
+	"name": "Aquaman",
+	"realName":"Arthur Curry",
+	"powers": "Rei dos Mares",
+ 	"team": "Liga da Justiça",
+    "description":"Aquaman é um super-herói das histórias em quadrinhos americanas da DC Comics. Criado por Paul Norris e Mort Weisinger, o personagem estreou na revista More Fun Comics #73 (novembro de 1941, apesar de constar na capa novembro, More Fun Comics #73 chegou às bancas dos EUA em 25 de setembro de 1941.). Inicialmente um herói secundário em títulos da antologia da DC, Aquaman depois estrelou em vários volumes como herói principal. Durante o final dos anos 1950 e 1960, período do renascimento dos super-heróis, conhecido como Era de Prata dos Quadrinhos, ele era um membro fundador da Liga da Justiça da América. Na década de 1990, a Era Moderna dos Quadrinhos, o personagem Aquaman tornou-se mais sério do que na maioria das interpretações anteriores, com enredos que descrevem o peso de seu papel como o rei da Atlântida.",
+	"appearances": [{
+			"nameAppear":"A lenda de Aquaman"
+			},
+			{
+			"nameAppear":"A Busca Por Mera"
+			},
+			{
+			"nameAppear":"As crônicas de Atlantis"
+			}]
+			
+},
+{
+	"name": "Superman",
+	"realName":"Clark Kent/Kal-El",
+	"powers": "Kryptoniano",
+ 	"team": "Liga da Justiça.",
+    "description":"Superman ou Super-Homem é um super-herói fictício de história em quadrinhos americanas publicado pela DC Comics, uma empresa subsidiária do grupo Time Warner. Superman, entretanto, já foi adaptado para diversos outros meios desde os anos 1930, como cinema, rádio, televisão, literatura e Video game. Superman é um super-herói criado pela dupla de autores de quadrinhos Joe Shuster e Jerry Siegel. Sua primeira aparição foi apresentada na revista Action Comics #1 em 1938, nos Estados Unidos. O personagem nasceu no planeta fictício de Krypton e tinha o nome de Kal-El. Foi mandado à Terra por seu pai, Jor-El, um cientista, momentos antes do planeta explodir.O foguete aterrissou na Terra na cidade de Smallville (por alguns anos, foi traduzida no Brasil como Pequenópolis), onde o jovem Kal-El foi descoberto pelo casal de fazendeiros Jonathan e Martha Kent. Conforme foi crescendo, ele descobriu que tinha habilidades diferentes dos humanos. Quando não está com o tradicional uniforme azul e vermelho, ele vive como Clark Kent, repórter profissional/jornalista no Planeta Diário, junto com Lois Lane e Jimmy Olsen.",
+	"appearances": [{
+			"nameAppear":"A morte do Superman"
+			},
+			{
+			"nameAppear":"Reino do Amanha"
+			},
+			{
+			"nameAppear":"Entre a Foice e o Martelo"
+	
+			}]
+			
+},
+{
+    "name": "Goku",
+    "realName":"Kakarotto",
+    "powers": "Saiyajin",
+     "team": "Terra.",
+     "description":"Son Goku (孫悟空 Son Gokū, mais conhecido apenas como Goku), cujo nome verdadeiro é Kakarotto (カカロット Kakarotto) é o protagonista da franquia Dragon Ball, criada por Akira Toriyama. Sua primeira aparição ocorreu no primeiro capítulo do mangá Dragon Ball, intitulado Bulma e Son Goku (em japonês: ブルマと孫悟空 Buruma to Son Gokū?), publicado na revista Weekly Shōnen Jump em 3 de dezembro de 1984. Goku é inspirado num personagem com o mesmo nome, 孫 悟空 (lê-se Sun Wukong em mandarim e Son Goku em japonês), personagem principal do romance chinês Jornada ao Oeste. Porém, Toriyama mudou algumas de suas características para ser mais original. Goku é apresentado como um menino estranho, com rabo de macaco e força sobre-humana. Conforme a história se desenrola, é revelado que ele descende de uma raça fictícia chamada Saiyajins, uma das raças mais poderosas do universo.",
+    "appearances": [{
+            "nameAppear":"Dragon Ball "
+            },
+            {
+            "nameAppear":"Dragon Ball Z"
+            },
+            {
+            "nameAppear":"Dragon Ball Super"
+            }
+    ]},{
+        "name": "O MAGO",
+        "realName":"Deus/Patolino",
+        "powers": ".Todos...",
+         "team": "Todos e nenhum...",
+         "description":"Contemplem o mago Com seus poderes Incríveis poderes Sob o olhar do necromante A escada prateada vai se erguer As pessoas maravilhadas Com seus olhos cheios de poder Comida fria vai esquentar ao enfeitiçar Balançando as suas mãos O cachorro quente explodirá Na presença do grande mago O trânsito para de repente Pode atravessar a rua Com os carros parados na sua frente Na tv muda-se os canais Sem que saia do sofá Sua varinha pega então Pra reclinar-se no ar Faminto por causa da última missão O mago quer lanchar Traça o rumo do prazer Para o habitual lugar Ele é o mago O místico mago",
+        "appearances": [{
+                "nameAppear":"Atrás de você",
+                },
+                {
+                "nameAppear":"Dentro do nosso coração",
+                },
+                {
+                "nameAppear":"Cartoon Network",
+                }]
+                }
+            ]
