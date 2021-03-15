@@ -38,7 +38,7 @@ class HeroesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number
-        print(superHeroes.count)
+  
         return superHeroes.count
     }
 

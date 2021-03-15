@@ -172,14 +172,14 @@
                                                 <rect key="frame" x="0.0" y="909.5" width="375" height="590.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cells" id="Ql9-b5-Ry8">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Ql9-b5-Ry8" customClass="ViewTableViewCell" customModule="MediaNotas" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="140"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ql9-b5-Ry8" id="K7E-2U-Jjp">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEs-Va-QxO">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HEs-Va-QxO" customClass="ViewTableViewCell" customModule="MediaNotas" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C8q-Yo-ua1">
@@ -215,6 +215,10 @@
                                                                 <constraint firstItem="HEs-Va-QxO" firstAttribute="top" secondItem="K7E-2U-Jjp" secondAttribute="top" id="vgf-Cd-gV2"/>
                                                             </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="ivImage" destination="C8q-Yo-ua1" id="bUc-aG-YEH"/>
+                                                            <outlet property="lbLabel" destination="kco-WF-Cav" id="aV0-al-0xD"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>
@@ -279,13 +283,12 @@
                     <navigationItem key="navigationItem" title="Title" id="YMH-1G-Hiw"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
-                        <outlet property="ivAppear" destination="C8q-Yo-ua1" id="XIS-N0-IIq"/>
                         <outlet property="ivHero" destination="S7g-sl-42W" id="Msy-I7-j9d"/>
-                        <outlet property="lbAppear" destination="kco-WF-Cav" id="WxM-dt-o4K"/>
                         <outlet property="lbName" destination="uDI-HF-edn" id="o7I-uP-0RE"/>
                         <outlet property="lbPower" destination="I9j-Wc-u6R" id="hSU-UV-XiX"/>
                         <outlet property="lbRealName" destination="6x0-dq-3aB" id="5Ga-NE-iUk"/>
                         <outlet property="lbTeam" destination="46e-ar-G0W" id="2MH-gb-WP3"/>
+                        <outlet property="tableView" destination="iYX-0r-IUn" id="EIP-iS-WkL"/>
                         <outlet property="tvDescription" destination="tNw-BJ-W9n" id="Nwo-hL-12J"/>
                     </connections>
                 </viewController>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
     var heroes: Heroes!
     
@@ -17,10 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbPower: UILabel!
     @IBOutlet weak var lbTeam: UILabel!
     @IBOutlet weak var tvDescription: UITextView!
-    var imageArray: [String] = []
+    
 
-    @IBOutlet weak var ivAppear: UIImageView!
-    @IBOutlet weak var lbAppear: UILabel!
+    
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    var imageArray: [String] = []
     
     
     override func viewDidLoad() {
@@ -62,6 +65,8 @@ class ViewController: UIViewController {
 }
 extension ViewController : UITableViewDataSource{
     
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
         
@@ -71,24 +76,22 @@ extension ViewController : UITableViewDataSource{
         
         return heroes.appearances.count
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cells = tableView.dequeueReusableCell(withIdentifier: "cells", for: indexPath)
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let nameImage = UIImage(named: imageArray[indexPath.row])
-                
-        lbAppear.text = heroes.appearances[indexPath.row].nameAppear
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewTableViewCell
         
-        ivAppear.image = nameImage
-        
-        return cells
+        let appear = heroes.appearances[indexPath.row]
+        cell.createCells(with: appear)
+
+        return cell
         
     }
-    
 }
 
 extension ViewController : UITableViewDelegate{
     
     
-    
+
     
 }
+
