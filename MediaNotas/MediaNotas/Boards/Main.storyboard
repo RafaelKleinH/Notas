@@ -101,7 +101,9 @@
                             <outlet property="delegate" destination="KP8-xB-f1h" id="icq-yg-HGi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UfM-xi-TsF"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="UfM-xi-TsF">
+                        <barButtonItem key="backBarButtonItem" title="Herois" id="Ixc-DP-Mnx"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGX-ap-lR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,7 +112,7 @@
         <!--Title-->
         <scene sceneID="cDc-MZ-ZY6">
             <objects>
-                <viewController id="y0X-Qm-1WL" customClass="ViewController" customModule="MediaNotas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y0X-Qm-1WL" customClass="DetailViewController" customModule="MediaNotas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xuE-sZ-FqT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,6 +305,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dYu-F2-ZY1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="KP8-xB-f1h" kind="relationship" relationship="rootViewController" id="jP1-FT-V8f"/>

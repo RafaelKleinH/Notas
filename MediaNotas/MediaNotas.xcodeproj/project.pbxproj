@@ -17,7 +17,7 @@
 		9D7CBBF625E9971100473C93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CBBF525E9971100473C93 /* AppDelegate.swift */; };
 		9D7CBBF825E9971100473C93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CBBF725E9971100473C93 /* SceneDelegate.swift */; };
 		9D9E213B25FC0CCC00502611 /* ViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9E213A25FC0CCC00502611 /* ViewTableViewCell.swift */; };
-		9DA3BB3825FB29F700438FF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA3BB3725FB29F700438FF5 /* ViewController.swift */; };
+		9DA3BB3825FB29F700438FF5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA3BB3725FB29F700438FF5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		9D7CBBF725E9971100473C93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D7CBC0325E9971400473C93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9E213A25FC0CCC00502611 /* ViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTableViewCell.swift; sourceTree = "<group>"; };
-		9DA3BB3725FB29F700438FF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DA3BB3725FB29F700438FF5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				9D11EFDC25FAB6D400DC2EF2 /* HeroesTableViewController.swift */,
-				9DA3BB3725FB29F700438FF5 /* ViewController.swift */,
+				9DA3BB3725FB29F700438FF5 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA3BB3825FB29F700438FF5 /* ViewController.swift in Sources */,
+				9DA3BB3825FB29F700438FF5 /* DetailViewController.swift in Sources */,
 				9D7CBBF625E9971100473C93 /* AppDelegate.swift in Sources */,
 				9D11EFE025FAB6EC00DC2EF2 /* HeroesTableViewCell.swift in Sources */,
 				9D7CBBF825E9971100473C93 /* SceneDelegate.swift in Sources */,

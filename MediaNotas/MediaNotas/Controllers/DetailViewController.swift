@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  MediaNotas
-//
-//  Created by Rafael Hartmann on 12/03/21.
-//
-
 import UIKit
 
-class ViewController: UIViewController{
+class DetailViewController: UIViewController{
     
     var heroes: Heroes!
     
@@ -17,20 +10,15 @@ class ViewController: UIViewController{
     @IBOutlet weak var lbPower: UILabel!
     @IBOutlet weak var lbTeam: UILabel!
     @IBOutlet weak var tvDescription: UITextView!
-    
-
-    
-    
-    
     @IBOutlet weak var tableView: UITableView!
-    var imageArray: [String] = []
     
+    var imageArray: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         oneLoadView()
-        // Do any additional setup after loading the view.
+        
     }
     
     func oneLoadView(){
@@ -45,53 +33,36 @@ class ViewController: UIViewController{
         lbTeam.text = "Grupo: \(heroes.team)"
         tvDescription.text = heroes.description
         
-    
-        
-        //let nameOfApperString = heroes
-           // .replacingOccurrences(of: " ", with: "")
         for hero in heroes.appearances {
+            
             let nameOFAppearString = hero.nameAppear.replacingOccurrences(of: " ", with: "")
-           
             imageArray.append(nameOFAppearString)
-            print(imageArray)
+
         }
-      
-     
     }
-    
-    
-   
-    
 }
-extension ViewController : UITableViewDataSource{
-    
-    
-    
+extension DetailViewController : UITableViewDataSource{
+  
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
         
+        return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return heroes.appearances.count
     }
+    
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewTableViewCell
-        
         let appear = heroes.appearances[indexPath.row]
         cell.createCells(with: appear)
 
         return cell
-        
     }
 }
-
-extension ViewController : UITableViewDelegate{
-    
-    
-
-    
+extension DetailViewController : UITableViewDelegate{
+    //Não precisou ser usado mas no curso pede para colocar.
 }
 
